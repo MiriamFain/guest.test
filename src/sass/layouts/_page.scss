@@ -1,0 +1,43 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__item:hover,
+.page__item:focus {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.page__list {
+  display: inline-block;
+  justify-items: center;
+  align-items: center;
+}
+
+.page__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.page__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // @include tablet {
+  //   width: 600px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  // @include desktop {
+  //   width: 800px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+}
