@@ -1,1 +1,5 @@
-@import './common';
+@import '/src/sass/base/common';
+@import '/src/sass/utils/mixins';
+@import '/src/sass/components/container';
+@import '/src/sass/layouts/page';
+@import '/src/sass/utils/hidden';

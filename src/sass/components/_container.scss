@@ -1,19 +1,19 @@
 .container {
   margin: 0 auto;
 
-  @include mob-only {
+  @include mobile {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 320px;
   }
-  @include tab-only {
+  @include tablet {
     padding-left: 30x;
     padding-right: 30px;
-    width: 768px;
+    max-width: 768px;
   }
-  @include pc-only {
+  @include desktop {
     padding-left: 15px;
     padding-right: 15px;
-    width: 1200px;
+    max-width: 1200px;
   }
 }
