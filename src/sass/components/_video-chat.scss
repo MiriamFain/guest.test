@@ -13,6 +13,15 @@
   pointer-events: none;
 }
 
+.videoChatBackdrop {
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+  width: calc(100% - 7px);
+  height: calc(100% - 7px);
+  background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
 .frame {
   width: 100%;
   height: 100%;
@@ -29,9 +38,13 @@
 }
 
 .frame__wrapper {
-  position: relative;
-  width: 640px;
-  height: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 720px;
+  height: 570px;
 }
 
 .frame__wrapper.fullScreen {
@@ -60,4 +73,17 @@
 
 .frame__wrapper.fullScreen .fullScreenBtn {
   display: none;
+}
+
+.closeChatBtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.openChatBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
