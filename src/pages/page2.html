@@ -7,6 +7,23 @@
     <title>page2</title>
   </head>
   <body>
-    <section class="conainer"></section>
+    <section class="section">
+      <button type="button" class="openChatBtn"></button>
+    </section>
+    <div class="videoChatBackdrop is-hidden">
+      <script type="module" src="./script/videoChat.js"></script>
+      <div class="frame__wrapper">
+        <iframe
+          class="frame"
+          src="https://imind.com/r/guest_test_classroom_001"
+          allow="camera; microphone; fullscreen; speaker; display-capture"
+          width="640"
+          height="480"
+        ></iframe>
+        <button type="button" class="fullScreenBtn">Full screen</button>
+        <button type="button" class="windowModeBtn">Back to window mode</button>
+      </div>
+    </div>
+    <script type="module" src="../scripts/video-chat.js"></script>
   </body>
 </html>
