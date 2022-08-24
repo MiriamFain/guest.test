@@ -32,11 +32,5 @@ function openChat() {
 function closeChat() {
   backdrop.classList.add('is-hidden');
   body.classList.remove('no-scroll');
+  frameWrapper.innerHTML = frameWrapper.innerHTML;
 }
-
-// function getValue(event) {
-//   event.preventDefault();
-//   const room = event.currentTarget.room.value;
-//   frame.src = `https://imind.com/ru/r/${room}`;
-//   setTimeout(showWindow, 2000);
-// }
